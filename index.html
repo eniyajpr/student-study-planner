@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Study Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Student Study Planner 📚</h1>
+            <p>Organize your studies. Track your progress. Stay consistent.</p>
+        </header>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <h3 id="totalTasks">0</h3>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="completedTasks">0</h3>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="pendingTasks">0</h3>
+                <p>Pending</p>
+            </div>
+
+        </section>
+
+        <section class="task-form">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your study task..."
+            >
+
+            <input
+                type="date"
+                id="dateInput"
+            >
+
+            <button onclick="addTask()">Add Task</button>
+
+        </section>
+
+        <section class="task-section">
+
+            <h2>📋 My Study Tasks</h2>
+
+            <ul id="taskList"></ul>
+
+            <p id="emptyMessage">
+                No tasks yet. Add your first study task! 🎯
+            </p>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
